@@ -1,0 +1,50 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+*{
+    -fx-font-family: 'Poiret One';
+}
+
+
+.headerPane {
+	-fx-background-image: url("../../view.assets/sky.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.footerPane {
+	-fx-background-color: #FDD840;
+}
+
+.button {
+	-fx-background-color: #FDD840;
+}
+
+.headerPane2 {
+	-fx-background-image: url("../../view.assets/space.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.image1 {
+	-fx-background-image: url("../../view.assets/image1.jpg"); 
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.image2 {
+	-fx-background-image: url("../../view.assets/image2.jpg"); 
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.image3 {
+	-fx-background-image: url("../../view.assets/image3.jpg"); 
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.image4 {
+	-fx-background-image: url("../../view.assets/image4.jpg"); 
+	-fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}

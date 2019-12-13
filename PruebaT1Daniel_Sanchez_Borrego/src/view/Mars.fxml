@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlRocket">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="100.0" prefWidth="200.0" styleClass="headerPane" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="TOP_CENTER" contentDisplay="TOP" text="Login">
+                     <font>
+                        <Font name="Poiret One" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="fotoLogin" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../view.assets/profilephoto.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField labelFloat="true" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" promptText="username">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField labelFloat="true" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" promptText="password">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXButton maxWidth="200.0" minWidth="200.0" onAction="#openStage" prefWidth="200.0" ripplerFill="#394c85" text="Let me in!">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Poiret One" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <Pane prefHeight="25.0" prefWidth="200.0" styleClass="footerPane" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <Pane prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label maxWidth="80.0" minWidth="80.0" prefWidth="80.0" text="Guest access..." AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
